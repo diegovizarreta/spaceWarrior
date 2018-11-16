@@ -527,7 +527,7 @@ function drawCover(){
 
 
 function generateAstes(){
-    if(frames%70===0) {
+    if(frames%55===0) {
         var height = Math.floor(Math.random()*200 + 50)
         var width = height
         var h = canvas.height-height-100
