@@ -1,6 +1,8 @@
 //canvas
 var canvas = document.getElementById('c')
 var ctx = canvas.getContext('2d')
+var tesla = document.getElementById("tesla")
+
 //variables
 var soundStar = document.createElement("audio")
 soundStar.src="Audio/Trevor Rabin - Armagedon theme.mp3"
@@ -492,13 +494,13 @@ function gameOver(){
     ctx.font = "bold 40px Arial"
     if(puntuacion > puntuacion2){
         ctx.fillText("Player 1 Tu Puntuacion es de : " + puntuacion + ", Eres un digno defensor de la Tierra", 40,300)
-        ctx.fillText("Tu Premio!  http://bit.ly/2zfvcni ", 40,400)
+        ctx.fillText("Tu Premio! Click Aqui ", 40,400)
         
     } else {
         ctx.fillText("Player 2 Tu Puntuacion es de : " + puntuacion2 + ", Eres un digno defensor de la Tierra", 40,300)
-        ctx.fillText("Tu Premio!  http://bit.ly/2zfvcni ", 40,400)
+        ctx.fillText("Tu Premio! Click Aqui  ", 40,400)
     }
-    
+    tesla.classList.remove("ocultar")
     ctx.font = "bold 20px Arial"
 }
 
