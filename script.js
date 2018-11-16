@@ -492,9 +492,11 @@ function gameOver(){
     ctx.font = "bold 40px Arial"
     if(puntuacion > puntuacion2){
         ctx.fillText("Player 1 Tu Puntuacion es de : " + puntuacion + ", Eres un digno defensor de la Tierra", 40,300)
+        ctx.fillText("Tu Premio!  http://bit.ly/2zfvcni ", 40,400)
+        
     } else {
         ctx.fillText("Player 2 Tu Puntuacion es de : " + puntuacion2 + ", Eres un digno defensor de la Tierra", 40,300)
-
+        ctx.fillText("Tu Premio!  http://bit.ly/2zfvcni ", 40,400)
     }
     
     ctx.font = "bold 20px Arial"
